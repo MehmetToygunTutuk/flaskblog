@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class = "jumbotron text-center">
+    <h3>Welcome to our Blog</h3>
+    <p>You can share your opions and articles with other people in here</p>
+</div>
+
+<ul>
+    {% for element in elements %}
+        <li>Element Id: {{element.id}} - Title: {{element.id}} - Content: {{element.content}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
